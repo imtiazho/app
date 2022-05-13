@@ -1,0 +1,605 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+main {
+    margin-top: 70px;
+}
+img{
+    max-width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+section{
+    margin-bottom: 80px;
+}
+/* Here style of naviation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+}
+.logo p {
+    color: #F83292;
+    font-size: 22px;
+    font-weight: 500;
+}
+.logo p span {
+    color: #814096;
+}
+ul.NavItems {
+    display: flex;
+}
+
+ul.NavItems li {
+    margin-left: 30px;
+}
+ul.NavItems li a {
+    color: #814096;
+    font-size: 17px;
+    transition: .3s;
+}
+ul.NavItems li a:hover {
+    color: #F83292;
+}
+header {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px #bfbfbf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000;
+}
+
+/* Here style of home section */
+.homeWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.HomeDetails h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.HomeDetails h1 span {
+    color: #F83292;
+}
+
+.HomeDetails p {
+    color: #4c4c4c;
+    margin-bottom: 30px;
+}
+.buttonDesign {
+    background-image: linear-gradient(90deg, #814096, #F83292);
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+.buttonDesign a {
+    color: #fff;
+    font-size: 14px;
+}
+.buttonDesign:hover {
+    transform: scale(1.1);
+}
+.homeBanner {
+    position: relative;
+    padding: 0px 40px;
+    animation: slider 1s ease-in-out 0s infinite alternate;
+}
+/* Animation */
+@keyframes slider {
+    0%{
+        top: 10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/* Here Style of Feature Section */
+.FeatureBox {
+    border: 1px solid #F83292;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #dbdbdb;
+}
+.FeaturesBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-column-gap: 20px;
+}
+.SectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #814096;
+    font-weight: 600;
+    font-size: 30px;
+}
+.SectionTitle span {
+    color: #F83292;
+}
+.featureImg {
+    margin-bottom: 10px;
+}
+.featuresDetails h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.featuresDetails p {
+    margin-bottom: 25px;
+    color: #4c4c4c;
+}
+.aboutAppDetails .buttonDesign {
+    margin-right: 21px;
+    margin-top: 13px;
+}
+.AboutAppDetailsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.AppView {
+    padding: 0px 40px;
+}
+.aboutAppDetails h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.aboutAppDetails p {
+    margin-bottom: 10px;
+    color: #4c4c4c;
+}
+#subscribe{
+    background-image: url('images/subscribe-bg.png');
+    background-repeat: no-repeat;
+}
+.subscribeDetails {
+    text-align: center;
+    color: #fff;
+    padding: 67px 0px;
+}
+.subscribeDetails h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.subscribeDetails p {
+    margin-bottom: 20px;
+}
+.inputField {
+    border: 2px solid #fff;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    border-radius: 25px;
+}
+.inputField input {
+    width: 75%;
+    background: none;
+    color: #fff;
+    margin-left: 18px;
+    font-size: 16px;
+}
+.inputField button {
+    width: 20%;
+    padding: 8px 0px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .3s;
+}
+.inputField input::placeholder {
+    color: #fff;
+}
+.inputField button:hover {
+    color: #F83292;
+}
+.PriceBox {
+    border: 2px solid #b3b3b3;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #d5d5d5;
+    transition: .2s;
+}
+.PirceBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.PriceBox h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #814096;
+}
+.PriceBox p {
+    color: #F83292;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.PriceBox p span {
+    font-size: 21px;
+    font-weight: normal;
+}
+.serviceItems li a {
+    line-height: 34px;
+    color: #4c4c4c;
+    font-weight: 500;
+    font-size: 17px;
+}
+.serviceItems {
+    margin-bottom: 26px;
+}
+.serviceItems i.fa-solid.fa-check {
+    color: #00dd00;
+    font-size: 19px;
+}
+.serviceItems i.fa-solid.fa-xmark {
+    font-size: 19px;
+    color: red;
+}
+.PriceBox:nth-child(2), .PriceBox:hover {
+    border: 2px solid #F83292;
+}
+.contactUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+}
+.contactForm {
+    border: 2px solid #b3b3b3;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.contactForm h4 {
+    color: #F83292;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+form input {
+    display: block;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 37px;
+    font-size: 16px;
+}
+#message {
+    width: 100%;
+    border-bottom: 1px solid;
+    resize: none;
+    font-size: 16px;
+    height: 125px;
+    margin-bottom: 25px;
+}
+form input:focus {
+    border-bottom: 1px solid #F83292;
+}
+#message:focus {
+    border-bottom: 1px solid #F83292;
+}
+section#contactUsSection {
+    margin-top: 120px;
+}
+#footer{
+    background-image: url('images/footer-bg.png');
+    background-size: cover;
+    height: 372px;
+    width: 100%;
+}
+.footerBoxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.footerbox {
+    margin-top: 60px;
+}
+.footerbox h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+.footerbox p {
+    line-height: 27px;
+}
+.footerbox ul li a {
+    color: #fff;
+    line-height: 30px;
+}
+.Contacticon i {
+    background: #fff;
+    color: #F83292;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.ContactInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.footerbox ul li a:hover {
+    text-decoration: underline;
+}
+#footer hr {
+    border: .5px solid #fff5;
+}
+p#copyrightclame {
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 17px;
+    letter-spacing: .8px;
+    word-spacing: 5px;
+}
+
+/* Responsive Part */
+@media only screen and (max-width :  1220px) {
+    .container {
+        width: 990px;
+    }
+    .featuresDetails h3 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width :  1000px) {
+    .container {
+        width: 820px;
+    }
+    ul.NavItems li{
+        margin-left: 25px;
+    }
+    ul.NavItems li a{
+        font-size: 16px;
+    }
+    .HomeDetails h1 {
+        font-size: 49px;
+    }
+    .aboutAppDetails h4 {
+        font-size: 23px;
+    }
+    .inputField button {
+        font-size: revert;
+    }
+    #footer{
+        height: 689px;
+    }
+    .footerbox h3 {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width :  830px){
+    .container {
+        width: 650px;
+    }
+    ul.NavItems li{
+        margin-left: 23px;
+    }
+    .HomeDetails h1 {
+        font-size: 38px;
+    }
+    ul.NavItems li a{
+        font-size: 14px;
+    }
+    .HomeDetails p {
+        font-size: 14px;
+        letter-spacing: .5px;
+    }
+    .homeBanner {
+        padding: 0px;
+    }
+    .FeaturesBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .AppView{
+        padding: 0px;
+    }
+    .aboutAppDetails h4 {
+        font-size: 18px;
+    }
+    .aboutAppDetails p {
+        font-size: 14px;
+    }
+    .buttonDesign {
+        padding: 10px 15px;
+    }
+    .aboutAppDetails .buttonDesign{
+        margin-right: 10px;
+    }
+    .inputField button {
+        font-size: 11px;
+    }
+    .PirceBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .contactForm h4 {
+        font-size: 27px;
+    }
+    .footerBoxes {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 0px;
+    }
+    .footerbox{
+        margin-top: 90px;
+    }
+    p#copyrightclame {
+        padding: 5px 0px;
+        font-size: 15px;
+    }  
+}
+@media only screen and (max-width :  660px){
+    .container {
+        width: 520px;
+    }
+    ul.NavItems li{
+        margin-left: 15px;
+    }
+    .HomeDetails h1 {
+        font-size: 38px;
+    }
+    ul.NavItems li a{
+        font-size: 12px;
+    }
+    .homeWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .HomeDetails{
+        order: 2;
+    }
+    .aboutAppDetails h4 {
+        font-size: 15px;
+    }
+    .aboutAppDetails p {
+        font-size: 13px;
+    }
+    .aboutAppDetails .buttonDesign{
+        margin-right: 4px;
+    }
+    #footer{
+        background-image: none;
+        background-color: #814096;
+        height: auto;
+    }
+    .footerbox{
+        margin-top: 28px;
+    }
+    .footerBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0px;
+    }
+    .contactForm h4{
+        font-size: 24px;
+    }
+    .inputField button{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width : 530px){
+    .container {
+        width: 400px;
+    }
+    ul.NavItems{
+        visibility: hidden;
+    }
+    .homeBanner{
+        padding: 0px 10px;
+    }
+    .FeaturesBoxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .AboutAppDetailsWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .AppView {
+        padding: 0px 20px;
+    }
+    .subscribeDetails h2 {
+        font-size: 27px;
+    }
+    .subscribeDetails p {
+        font-size: 13px;
+    }
+    .aboutAppDetails h4 {
+        font-size: 23px;
+    }
+    .aboutAppDetails p {
+        font-size: 16px;
+    }
+    .buttonDesign{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    #subscribe{
+        background-position: center;
+    }
+    .inputField{
+        width: 90%;
+    }
+    .inputField button{
+        font-size: 11px;
+    }
+    section#PricingSection{
+        margin-top: -70px;
+    }
+    .PirceBoxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contactUs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .footerBoxes{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .ContactInfo{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width : 410px){
+    .container {
+        width: 300px;
+    }
+    nav{
+        padding: 7px 0px;
+    }
+    .HomeDetails h1 {
+        font-size: 30px;
+    }
+    .inputField button {
+        font-size: 8px;
+    }
+    .aboutAppDetails h4{
+        font-size: 17px;
+    }
+    .aboutAppDetails p{
+        font-size: 15px;
+    }
+    .footerbox p{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    p#copyrightclame{
+        font-size: 11px;
+    }
+}
